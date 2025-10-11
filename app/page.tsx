@@ -233,16 +233,16 @@ function About() {
 function Skills() {
   const groups = [
     {
-      title: "Core",
-      items: ["TypeScript", "React", "Next.js", "Tailwind", "Node.js"]
+      title: "Front-end basis",
+      items: ["HTML", "CSS", "Javascript", "React", "Next.js", "TypeScript"]
     },
     {
-      title: "Tooling",
-      items: ["Vite", "Webpack", "ESLint", "Playwright", "Vitest/Jest"]
+      title: "Tools & Frameworks",
+      items: ["Tailwind CSS", "Git", "VS Code", "Vercel",]
     },
     {
-      title: "UX & Quality",
-      items: ["A11y", "Design Systems", "Storybook", "Performance", "Cypress"]
+      title: "Persoonlijke skills",
+      items: ["Leergierig", "Nauwkeurig", "Probleemoplossend", "Teamspeler"]
     }
   ];
   return (
@@ -267,26 +267,27 @@ function Skills() {
 function Experience() {
   const items = [
     {
-      role: "Front‑end Developer",
-      company: "Jouw Bedrijf / Freelance",
-      period: "2023 – heden",
+      role: "Logistiek Medewerker",
+      company: "Diverse bedrijven",
+      period: "2019 – 2024",
       bullets: [
-        "Bouwde component‑bibliotheken in React/Tailwind",
-        "Introduceerde performance budgetten en metingen",
-        "Samenwerking met design t.b.v. UX verbeteringen"
+        "Verantwoordelijk voor ontvangst, opslag en verzending van goederen",
+        "Werkte nauwkeurig en efficiënt binnen teamverband",
+        "Leerde gestructureerd werken en prioriteiten stellen"
       ]
     },
     {
-      role: "(Voorbeeld) UI Engineer",
-      company: "Acme B.V.",
-      period: "2021 – 2023",
+      role: "Student Softwareontwikkeling",
+      company: "Hogeschool Rotterdam",
+      period: "2024 – heden",
       bullets: [
-        "Migratie naar Next.js 13 app router",
-        "Opzet E2E‑tests met Playwright",
-        "Verbeterde a11y: kleurcontrast, ARIA en focus states"
+        "Bezig met opleiding richting full stack development",
+        "Oefent met React, Next.js en TypeScript",
+        "Bouwt projecten om praktische ervaring op te doen"
       ]
     }
   ];
+
   return (
     <Container id="experience">
       <SectionHeading kicker="Ervaring" title="Waar ik gewerkt heb" />
