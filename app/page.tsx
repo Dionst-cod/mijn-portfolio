@@ -152,12 +152,34 @@ function Hero() {
             </div>
             <div className="flex items-center justify-center">
               <div className="relative aspect-square w-72 max-w-full">
-                <div className="absolute inset-0 rounded-3xl border border-white/10 bg-white/5" />
-                <div className="absolute inset-3 rounded-2xl bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,.25),transparent_60%)]" />
-                <div className="absolute inset-0 grid place-items-center">
-                  <span className="text-center text-sm text-white/70">
-                    Voeg hier later een professionele foto of animatie toe
-                  </span>
+                <div className="flex items-center justify-center">
+                  <motion.div
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    className="relative"
+                  >
+                    <div
+                      className="pointer-events-none absolute -inset-2 rounded-[32px] bg-gradient-to-br
+                                from-indigo-500/40 via-fuchsia-500/30 to-cyan-400/20 opacity-60 blur-xl"
+                      aria-hidden="true"
+                    />
+                    <div className="relative overflow-hidden rounded-[28px] border border-white/15 bg-slate-950/60 shadow-2xl">
+                      <div className="relative aspect-square w-72 max-w-full">
+                        <Image
+                          src="/me.png"
+                          alt="Profielfoto van Dion Stolk"
+                          fill
+                          className="object-cover object-[50%_15%]"
+                          priority
+                        />
+                      </div>
+                      <div className="border-t border-white/10 bg-black/30 px-4 py-3 text-sm text-white/80 flex items-center justify-between">
+                        <span className="font-semibold">Dion Stolk</span>
+                        <span className="text-xs text-white/60">Front-end developer</span>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
