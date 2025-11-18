@@ -176,7 +176,6 @@ function Hero() {
                       </div>
                       <div className="border-t border-white/10 bg-black/30 px-4 py-3 text-sm text-white/80 flex items-center justify-between">
                         <span className="font-semibold">Dion Stolk</span>
-                        <span className="text-xs text-white/60">Front-end developer</span>
                       </div>
                     </div>
                   </motion.div>
